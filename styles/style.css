@@ -22,16 +22,13 @@
   background-color: #f2f2f2;
 }
 
-.logo {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-}
-
 .logo_place_header {
   background-image: url(../images/logo_place_header.svg);
   height: 32px;
   width: 183px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
 }
 
 .header__title {
@@ -64,6 +61,7 @@
   line-height: 1.2px;
   font-size: 18px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .header__link::after {
@@ -212,7 +210,7 @@
   font-weight: 400;
 }
 
-.table__text__span-accent {
+.table__text_accent {
   box-sizing: border-box;
   margin: 20px 0 0;
   padding: 0;
@@ -225,12 +223,13 @@
   position: relative;
   min-height: 890px;
   background-color: #f2f2f2;
+  padding-top: 100px;
 }
 
 .feynman__title {
   box-sizing: border-box;
   padding: 0;
-  margin: 0 auto 51px;
+  margin: 0 auto 70px;
   position: relative;
   text-align: center;
   width: 648px;
@@ -243,7 +242,7 @@
 .feynman__subtitle {
   box-sizing: border-box;
   padding: 0;
-  margin: 0 auto 51px;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   line-height: 51px;
@@ -263,6 +262,7 @@
   position: absolute;
   right: 48px;
   top: 50%;
+  text-decoration: none;
 }
 
 .feynman__link::after {
@@ -282,10 +282,10 @@
 /*KAUFMAN*/
 
 .kaufman {
-  padding-bottom: 90px;
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  padding: 90px 0;
 }
 
 .kaufman__triangle {
@@ -294,11 +294,12 @@
   top: 0;
   width: 877px;
   height: 877px;
+  background-size: 877px;
   background-image: url(../images/kaufman-triangle.svg);
 }
 
 .section-title_theme_dark {
-  margin: 90px auto 0;
+  margin: 0 auto;
   color: #FFF;
   line-height: 1.15;
   font-size: 60px;
@@ -317,7 +318,6 @@
 }
 
 .table__heading_theme_dark {
-  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
@@ -327,6 +327,10 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
+}
+
+.table_theme_dark {
+  margin: 0 auto;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -340,6 +344,7 @@
 /*FOOTER*/
 
 .footer {
+  box-sizing: border-box;
   padding: 60px 0 40px;
   min-height: 350px;
   position: relative;
@@ -350,30 +355,31 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
+  margin: 0 auto;
 }
 
 .footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
-  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+
 }
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
-  margin-top: 35px;
 }
 
 .footer__author {
   box-sizing: border-box;
   padding: 0;
-  margin: 18px 0 18px 64px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
   color: #FFF;
-  bottom: 0;
 }
 
 .footer__column-heading {
@@ -396,7 +402,7 @@
 .footer__column-link {
   box-sizing: border-box;
   padding: 0;
-  margin: 20px 0 16px;
+  display: block;
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
