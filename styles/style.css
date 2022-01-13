@@ -203,23 +203,21 @@
 
 .table__text {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0 0 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
 }
 
-.table__text_accent {
-  box-sizing: border-box;
-  margin: 20px 0 0;
-  padding: 0;
-  display: block;
+.table__cell .table__text:last-child {
+  margin: 0;
 }
 
 /*FEYNMAN*/
 
 .feynman {
+  box-sizing: border-box;
   position: relative;
   min-height: 890px;
   background-color: #f2f2f2;
@@ -267,10 +265,6 @@
 
 .feynman__link::after {
   content: '\2192';
-}
-
-.feynman__link:hover {
-  background-color: rgba(216, 209, 209, 0.4);
 }
 
 .feynman__illustration {
@@ -344,6 +338,7 @@
 /*FOOTER*/
 
 .footer {
+  display: flex;
   box-sizing: border-box;
   padding: 60px 0 40px;
   min-height: 350px;
