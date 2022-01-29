@@ -1,0 +1,16 @@
+.header__link {
+  color: #2f80ed;
+  line-height: 1.2px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: opacity 1s linear;
+}
+  
+  .header__link::after {
+  content: '\2192';
+}
+  
+  .header__link:hover {
+  opacity: 0.5;
+}

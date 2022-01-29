@@ -1,0 +1,12 @@
+.table__text {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.table__cell .table__text:last-child {
+  margin: 0;
+}
