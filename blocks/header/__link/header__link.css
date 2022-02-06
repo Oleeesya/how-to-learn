@@ -7,10 +7,10 @@
   transition: opacity 1s linear;
 }
   
-  .header__link::after {
+.header__link::after {
   content: '\2192';
 }
   
-  .header__link:hover {
+.header__link:hover {
   opacity: 0.5;
 }
